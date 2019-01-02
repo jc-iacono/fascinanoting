@@ -23,8 +23,8 @@
   package:
     state: 'present'
     name: "{{ package_name_nano }}"
-  register: result_nano_i
-  until: result_nano_i is succeeded
+  register: result_nano_install
+  until: result_nano_install is succeeded
   retries: 3
   tags:
     - install
