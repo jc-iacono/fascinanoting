@@ -23,8 +23,8 @@
   package:
     state: 'absent'
     name: "{{ package_name_nano }}"
-  register: result_nano_r
-  until: result_nano_r is succeeded
+  register: result_nano_remove
+  until: result_nano_remove is succeeded
   retries: 3
   tags:
     - remove
